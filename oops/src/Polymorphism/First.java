@@ -22,7 +22,7 @@ class Animal {
 	public String run(int j) // (i)
 	{
 		System.out.println("RUN:2");
-		return null;
+		return null ;
 	}
 
 	public void run(double d, int m) {

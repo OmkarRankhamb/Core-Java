@@ -19,7 +19,7 @@ public class Second {
 
 
 
-interface  Ianimal<R,T> //placeholder
+interface  Ianimal<R,T> 
 {
 	R weight(T t);
 	

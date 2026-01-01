@@ -13,7 +13,7 @@ public class Third {
           
           System.out.println(list);
           System.out.println("First element "+list.get(1));
-         // list.set(0,34);
+          list.set(0,34);
           System.out.println(list);
           System.out.print("list"+list.size());
           for(int num : list) {

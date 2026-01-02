@@ -24,14 +24,14 @@ public class Fifth {
 		// [st1,st2]=> [st:st1],[st:st2],[st:st3]
 		for (Student st : uss) {
 
-			if (st.getName().equals("abc")) {
-				st.setEmail("Sham@gmail.com");
-			}
+			uss.add(new Demo(1, "abc", "abc@gmail.com"));
+
+			uss.add(new Demo(2, "cde", "cde@gmail.com"));
+
+			System.out.println(uss);
 		}
 
-		System.out.println(uss);
 	}
-
 }
 
 class Demo {
@@ -77,7 +77,7 @@ class Demo {
 	public boolean equals(Object o) {
 		Student st = (Student) o;
 
-		return this.name.equals(st.getName()) && this.id == st.id && this.email.equals(st.getName());
+		return this.name.equals(st.getName()) && this.id == st.id && this.email.equals(st.setEmail(email));
 	}
 
 	public int hashCode() {

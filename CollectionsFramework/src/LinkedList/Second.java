@@ -33,5 +33,21 @@ class Student{
 	public int Hash() {
 		return id;
 	}
+	public Object getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public void setEmail(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+	public Object getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public Object getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
 

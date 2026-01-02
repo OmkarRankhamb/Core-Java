@@ -28,7 +28,7 @@ public class Fourth {
 	    System.out.println(list.size());
 	    
 		
-		//[]=> dynamic 
+	    //[]=> dynamic 
 //		//10=>7.5=>20=>15=>40
 //		System.out.println(list);
 //		System.out.println(list.size());

@@ -17,7 +17,7 @@ public class Comparator_1 {
 		std.add(lp1);
 		std.add(lp);
 		std.add(lp3);
-		std.add(lp3);
+		std.add(lp2);
 		System.out.println(std);
 		
 		Iterator<Loptop> tr = std.iterator();
@@ -67,6 +67,14 @@ class nameComaparator implements Comparator<Loptop>{
 
 	public int compare(Loptop o1, Loptop o2) {
 		return o1.name.compareTo(o2.name);
+	}
+	
+}
+class typeComparator implements Comparator<Loptop>{
+
+	
+	public int compare(Loptop o1, Loptop o2) {
+		return Double.compare(o1.type,o2.type);
 	}
 	
 }

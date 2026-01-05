@@ -20,14 +20,4 @@ public class HashItretar_1 {
 	  }
   }
 }
-//class Loptop{
-//	int price;
-//	String name;
-//	int model;
-//	
-//	public Loptop(int price , String name , int model) {
-//		this.price=price;
-//		this.name=name;
-//		this.model=model;
-//	}
-//}
+

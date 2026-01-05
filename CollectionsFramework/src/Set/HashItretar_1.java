@@ -10,6 +10,7 @@ public class HashItretar_1 {
 	  set.add(56);
 	  set.add(87);
 	  set.add(12);
+	  set.add(null);
 	  set.add(80);
 	  set.add(32);
 	  

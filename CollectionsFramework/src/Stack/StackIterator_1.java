@@ -10,7 +10,7 @@ public class StackIterator_1 {
 
 		trac.add(23);
 		trac.add(87);
-		// trac.add(null);
+		// trac.add(null);   // The use of Iterator not allowed null valuve
 		trac.add(12);
 		// trac.add(null);
 		trac.add(98);

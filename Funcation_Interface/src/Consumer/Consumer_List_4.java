@@ -22,7 +22,7 @@ public class Consumer_List_4 {
 		list2.add(30);
 		list2.add(40);
 
-		List<Integer> list3 = new ArrayList<Integer>();
+		List<List<List<Integer> >>>list3 = new ArrayList>();
 		list3.add(11);
 		list3.add(12);
 		list3.add(13);

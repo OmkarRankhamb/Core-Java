@@ -11,7 +11,7 @@ public class Consumer_Interface_5 {
 
 		Consumer<Integer> rtc = (i) -> System.out.println(i + 2);
 
-		list.forEach(rtc);
+		//list.forEach(rtc);
 		// System.out.println("===========================");
 
 		System.out.println(list);

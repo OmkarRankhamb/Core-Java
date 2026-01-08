@@ -22,7 +22,7 @@ public class Consumer_List_4 {
 		list2.add(30);
 		list2.add(40);
 
-		List<List<List<Integer> >>>list3 = new ArrayList>();
+		List<Integer> list3 = new ArrayList<Integer>();
 		list3.add(11);
 		list3.add(12);
 		list3.add(13);
@@ -64,7 +64,7 @@ class demo_l implements Consumer<List<List<List<Integer>>>> {
 
 			ArrayList list4 = new ArrayList();
 		
-               System.out.println(list4);
+               System.out.println(list1);
 		}
 	}
 	}

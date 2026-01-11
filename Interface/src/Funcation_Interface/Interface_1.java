@@ -2,7 +2,11 @@ package Funcation_Interface;
 
 public class Interface_1 {
 	public static void main(String[] args) {
-		Demo<Integer> demo = new Concreat();
+		Demo<Integer> demo = new Demo<Integer>() {
+			public void add(Integer t1 , Integer t2) {
+				System.out.println(t1+t2);
+			}
+		};
 
 		demo.add(101, 322);
 
@@ -14,10 +18,10 @@ interface Demo<T> {
 
 }
 
-class Concreat implements Demo<Integer> {
-
-	public void add(Integer t1, Integer t2) {
-		System.out.println(t1 + t2);
-	}
-
-}
+//class Concreat implements Demo<Integer> {
+//
+//	public void add(Integer t1, Integer t2) {
+//		System.out.println(t1 + t2);
+//	}
+//
+//}

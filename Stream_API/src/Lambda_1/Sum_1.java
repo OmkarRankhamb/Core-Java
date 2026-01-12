@@ -1,6 +1,7 @@
 package Lambda_1;
 
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 public class Sum_1 {
@@ -9,7 +10,12 @@ public class Sum_1 {
 //	int[] sum = {0};
 //	list.stream().forEach(i-> sum[0]+=i);
 //	System.out.println(sum[0]);
-
+		
+		
+     Consumer<Integer>pre =(i)->System.out.println(i*2);
+     list.forEach(pre);
+     
+     
 //		int sum = list.stream().mapToInt(Integer::intValue).sum();
 //		System.out.println(sum);
 		
@@ -20,7 +26,8 @@ public class Sum_1 {
 //		int sum=
 //		list.stream().mapToInt(Integer::intValue).sum();
 //		System.out.println(sum);
-		list.stream().map(i->i+2).forEach(System.out::println);
+		
+		//list.stream().map(i->i+2).forEach(System.out::println);
 		
 	}
 }

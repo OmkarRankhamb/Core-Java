@@ -11,6 +11,6 @@ public class First {
 		Consumer<Integer> csr=(i)->{System.out.println(i/2);};
 		list.forEach(csr);
 		System.out.println("==========================");
-		list.stream().map(i-> i-2).forEach(System.out::println);
+		list.stream().map(i-> i-2+"Ab").forEach(System.out::println);
  }
 }

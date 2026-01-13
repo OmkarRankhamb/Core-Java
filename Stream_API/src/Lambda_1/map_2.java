@@ -7,6 +7,11 @@ import java.util.function.Function;
 public class map_2 {
 
 	public static void main(String[] args) {
+		
+		/*
+		 * String Convert toUpperCase
+		 */
+		
       List<String> list=List.of("Pune","Mumbai","Latur","Dharasiv");
       
       

@@ -10,6 +10,10 @@ public class Map_1 {
 		
     List< String> list=List.of("Car","etyw","etwy","poio");
     
+    /*
+     * String Reverse
+     */
+    
     Function<String ,StringBuffer> fun=(i)->{return new StringBuffer(i).reverse();};
     Consumer<StringBuffer> fun2 =(i)->{System.out.println(i);};
     

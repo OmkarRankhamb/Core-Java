@@ -12,6 +12,7 @@ public class Map_3 {
 		List<String> list=List.of("Pune","Mumbai","Latur","Dharasiv");
 		/*
 		 * String Length
+		 * Print String name => Length
 		 */
 		
 		
@@ -20,6 +21,9 @@ public class Map_3 {
 		
 		System.out.println(map);
 		
+		/*
+		 * Direct Print Length
+		 */
 		Function<String , Integer> fun=(i)->{return i.length();};
 		
 		list.stream().map(fun).forEach(System.out::println);

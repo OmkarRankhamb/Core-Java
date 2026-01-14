@@ -19,6 +19,7 @@ public class Average_Salary {
 						Employee::getDepartment,
 				        Collectors.averagingDouble(Employee::getsalary)
 				      
+				      
 				        ));
 		System.out.println(output);
 

@@ -8,7 +8,7 @@ public class Using_Map {
 
 	public static void main(String[] args) {
    
-		List<String> list=List.of("Amer","Shivam","Shivanii..","Samir");
+		List<String> list=List.of("Amar","Shivam","Shivanii..","Samir");
 		
 		Function<String , Integer> fun =(i)->{return i.length();};
 		  Consumer<Integer> str =(i)->{System.out.println(i);};

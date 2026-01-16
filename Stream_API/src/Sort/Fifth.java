@@ -8,7 +8,7 @@ public class Fifth {
 		System.out.println(
          List.of(12,34,32,2,78).
        
-       stream().max((i,j)->{return Integer.compare(i, j);}));
+       stream().max((i,j)->{return Integer.compare(j, i);}));
          
          
 	}

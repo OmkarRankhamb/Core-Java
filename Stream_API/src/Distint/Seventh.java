@@ -12,6 +12,7 @@ public class Seventh {
 		.sorted((i,j)->Integer.compare(j, i))
 		.reduce((i,j)->i+j);
 		
+		
 		System.out.println(sum);
 	
 

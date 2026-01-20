@@ -10,12 +10,16 @@ public class CustomClass_Emp {
         		                new Emp(3,"sds",21122.0),
         		                new Emp(4,"saw",43655.0));
         
-        list.stream()
-        .sorted((i,j)->Double.compare(i.Salary, j.Salary))
-       .skip(2)
-       .limit(1)
-        .forEach(System.out::println);
-        		 
+      Double totalSalary=  list.stream()
+      //  .sorted((i,j)->Double.compare(i.Salary, j.Salary))
+       // .reduce((a,b)->a.Salary<b.Salary? b:a).get();
+    		  .mapToDouble(emp->emp.Salary)
+    		  .sum();
+      //  .skip(2)
+      //  .limit(1)
+        
+       // .forEach(System.out::println);
+        	System.out.println(totalSalary);	 
 	}
 
 }

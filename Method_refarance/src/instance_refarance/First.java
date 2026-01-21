@@ -7,7 +7,7 @@ public class First {
 	public static void main(String[] args) {
 		 Demo_1 d = new Demo_1();
 		 
-   int sum =    List.of(12,23,45,56,324,543)
+   int sum =  List.of(12,23,45,56,324,543)
        .stream()
        .filter(d::get)
        .reduce(0,d::add);

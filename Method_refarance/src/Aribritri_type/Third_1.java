@@ -11,7 +11,9 @@ public class Third_1 {
 
 				.map(i -> new String(i).valueOf(i).length())
 				.peek(System.out::println)
-				.filter(i -> i > 2).reduce(0, (i, j) -> i + j);
+				.filter(i -> i > 2)
+				.reduce(0, (i, j) -> i + j);
+		   
                  System.out.println(sum);
 	}
 

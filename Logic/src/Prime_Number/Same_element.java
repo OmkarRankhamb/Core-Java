@@ -3,7 +3,9 @@ package Prime_Number;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
-
+/*
+ * print unique element
+ */
 public class Same_element {
 
 	public static void main(String[] args) {

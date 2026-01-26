@@ -11,13 +11,13 @@ public class Third {
 		 * with the help of the object.
 		 */
 
-		Book sbi=new Bank();
+		Book sbi=new Book();
 		
 		/**
 		 * Trying to access with the help of object 
 		 * in diff . class of diff. package.
 		 */
-		sbi.display();
+		((level) sbi).display();
 		/**
 		 * name is: SBIPublic
 		 * only public => accessible 
@@ -40,11 +40,11 @@ public class Third {
 
 }
 
-class level extends Bank
+class level extends Book
 {
 	public void pincode()
 	{
-		super.pincode();
+		super.hashCode();
 	}
 
 	public void display() {

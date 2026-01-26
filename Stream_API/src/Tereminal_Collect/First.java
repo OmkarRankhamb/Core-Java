@@ -34,7 +34,7 @@ class Storing implements Collector<Integer, List<Integer>, List<Integer>> {
 	@Override
 	public BiConsumer<List<Integer>, Integer> accumulator() {
 		return (list, integer)->{
-			if(integer>30&& integer %2!=0) {
+			if(integer>30 && integer %2!=0) {
 				list.add(integer);
 			}
 		};

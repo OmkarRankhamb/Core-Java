@@ -18,8 +18,8 @@ public class Custom_Class_map {
          for(Map.Entry<String,List<Employee>> m:map.entrySet()) {
         	 m.getValue().stream()
         	 .sorted((i,j)->{return Double.compare(j.getSalary(), i.getSalary());})
-        	 .limit(2)
-        	 .skip(1)
+        	// .limit(2)
+        	// .skip(1)
         	 .forEach(System.out::println);
         	 
          }

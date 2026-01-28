@@ -8,7 +8,7 @@ public class Fourth {
 		
 		Optional<Integer> ops = Optional.ofNullable(20);
 		
-		System.out.println(ops.filter((i)->(i>20))
+		System.out.println(ops.filter((i)->(i>10))
 		.orElseThrow(()->new RuntimeException("Value is not prasent")));
 
 	}

@@ -7,7 +7,11 @@ public class Ops_List {
 
 	public static void main(String[] args) {
 
-		Optional<Integer> ops = List.of(12, 34, 45).stream()//.max((i,j)->Integer.compare(i, j));
+		Optional<Integer> ops = List.of(12, 34, 45).stream()
+				/*
+				 * only one  Min or Max use 
+				 */
+				//.max((i,j)->Integer.compare(i, j));
 				.min((i, j) -> Integer.compare(i, j));
 		System.out.println("Min => " + ops.get());
 

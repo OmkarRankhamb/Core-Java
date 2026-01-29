@@ -53,13 +53,13 @@ class Enter{
 	String s;
 	String p;
 	int i;
-	public Enter(String s) {
+	private Enter(String s) {
 		this.s=s;
 	}
-	public Enter(int i) {
+   private Enter(int i) {
 		this.i=i;
 	}
-	public Enter(int i,String p) {
+	private Enter(int i,String p) {
 		this.i=i;
 		this.p=p;
 	}

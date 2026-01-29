@@ -30,8 +30,11 @@ public class Private_Field {
 //          // kk.setAccessible(true);
 //            
 //        //   Lab lbb =(Lab)kk.newInstance("Banks");
-//           Field idd =cl.getDeclaredField("name");
+          Field idd =cl.getDeclaredField("name");
+          
+          idd.set(lb, "Ak Kumar");
 //           
+          System.out.println(idd.get(lb));
 //           idd.setAccessible(true);
 //           
 //         //  idd.set(idd, kk);

@@ -30,7 +30,7 @@ public class Third {
            Field sal = co.getDeclaredField("Salary");
            
          //  System.out.println(sal);
-           sal.setAccessible(true);
+        //   sal.setAccessible(true);
            
            System.out.println(sal.getDouble(std));
            

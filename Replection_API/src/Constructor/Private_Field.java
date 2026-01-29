@@ -26,19 +26,13 @@ public class Private_Field {
            System.out.println(sal.getInt(lb));
         System.out.println("________________________________________________"); 
         
-//          // Constructor <?> kk =cl.getDeclaredConstructor(String.class);
-//          // kk.setAccessible(true);
-//            
-//        //   Lab lbb =(Lab)kk.newInstance("Banks");
+
           Field idd =cl.getDeclaredField("name");
           
           idd.set(lb, "Ak Kumar");
-//           
+          
           System.out.println(idd.get(lb));
-//           idd.setAccessible(true);
-//           
-//         //  idd.set(idd, kk);
-//          // System.out.println(idd.canAccess(kk));
+
            
 	}
 

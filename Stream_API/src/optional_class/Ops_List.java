@@ -17,19 +17,23 @@ public class Ops_List {
 
 		System.out.println("**************************************************");
 
-		Optional<Integer> op = List.of(10, 20, 20).stream().reduce((i, j) -> i * j);
+		Optional<Integer> op = List.of(10, 20, 20)
+		.stream().reduce((i, j) -> i * j);
 		System.out.println("Multi => " + op.get());
 
 		System.out.println("************************************************************");
 
-		Optional<Integer> ops1 = List.of(12, 34, 56, 11).stream().max((i, j) -> Integer.compare(i, j));
+		Optional<Integer> ops1 = List.of(12, 34, 56, 11)
+				.stream()
+				.max((i, j) -> Integer.compare(i, j));
 		System.out.println("Max => " + ops1.get());
 
 		System.out.println("*****************************************************************");
 
 		Optional<Integer> pp = List.of(23, 47, 847, 87456)
 
-				.stream().reduce((i, j) -> i + j);
+				.stream()
+				.reduce((i, j) -> i + j);
 		System.out.println("sum => " + pp.get());
 
 	}

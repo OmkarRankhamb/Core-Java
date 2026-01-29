@@ -27,18 +27,43 @@ public class Second {
 	          Employee  Ep= (Employee)sp.newInstance("Print re");
 	          
 	          System.out.println(Ep.s);
+	          System.out.println("***************************************");
+	          
+	          Constructor<?> con= cl.getDeclaredConstructor(int.class);
+	          System.out.println(con);
+	          
+	          con.setAccessible(true);
+	          Employee emp = (Employee)con.newInstance(5000);
+	          
+	          System.out.println(emp.i);
+	          
+	          System.out.println("***************************");
+	          Constructor<?> co =cl.getDeclaredConstructor(int.class,String.class);
+	            System.out.println(co);
+	          
+	            co.setAccessible(true);
+	            
+	            Employee emp2 = (Employee) co.newInstance(1223,"Print zal re");
+	            System.out.println(emp2.i);
+	            System.out.println(emp2.s);
+	          
+	          
 	}
 
 }
 class Employee{
 	String s;
+	int i;
 	private Employee(String s) {
 		this.s=s;
 	}
-	public Employee(int i) {
-		
+	private Employee(int i) {
+		this.i=i;
 	}
-	public Employee(int i, String p ) {
+	private Employee(int i, String s ) {
+		this.i=i;
+		this.s=s;
+		
 		
 	}
 	}

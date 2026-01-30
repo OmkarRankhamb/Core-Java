@@ -24,6 +24,7 @@ public class Private_Variable {
 		conn.setAccessible(true);
 		
 		Demoo d =(Demoo)conn.newInstance("print zal re");
+		
 		Field f1 =cl.getDeclaredField("name");
 		f1.setAccessible(true);
           System.out.println(f1.get(d));

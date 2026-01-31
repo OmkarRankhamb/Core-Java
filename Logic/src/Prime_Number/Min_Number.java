@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 
 public class Min_Number {
@@ -30,9 +31,13 @@ public class Min_Number {
 		 * String lenght & max Length
 		 */
 				
-		List<?> list2 =List.of("man","shami","oputnjgeew","ygfwurwer");
-		Optional<String,Integer> min = list2.stream()
-				.map((i,j)->String(i)
+		List<String> list2 =List.of("man","shami","oputnjgeewqwq","ygfwurwer");
+Optional<Integer> m1=list2.stream()
+		.map(String::length)
+		.filter(i->i>=9)
+		.peek(System.out::println)
+		.reduce((i,j)->Integer.max(i, j));
+System.out.println(m1);
 	}
 
 }

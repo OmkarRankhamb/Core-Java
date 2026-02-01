@@ -6,6 +6,10 @@ import java.util.List;
 public class Second {
 
 	public static void main(String[] args) {
+		
+		/*
+		 * particular object add all String in last
+		 */
 		String s= "ka";
 		List.of("Heloo","gelo","nahi","janar")
 		.stream()
@@ -13,6 +17,10 @@ public class Second {
 		.forEach(System.out::println);
 		
 		System.out.println("======================");
+		
+		/*
+		 * add staring & last
+		 */
 		
 		List.of("Heloo","gelo","nahi","janar")
 		.stream()

@@ -28,11 +28,13 @@ public class Min_Number {
 				System.out.println(map);
 
 		/*
-		 * String lenght & max Length
+		 * String lenght & max & min Length
+		 * 
 		 */
 				
 		List<String> list2 =List.of("man","shami","oputnjgeewqwq","ygfwurwer");
 Optional<Integer> m1=list2.stream()
+
 		.map(String::length)
 		.filter(i->i>=9)
 		.peek(System.out::println)

@@ -6,7 +6,7 @@ public class Second {
 	public static void main(String[] args) throws InterruptedException {
 		print p = new print();
 		p.start();
-		p.join();
+		//p.join();
 		
 		int Count = 1;
 		while (Count < 30) {

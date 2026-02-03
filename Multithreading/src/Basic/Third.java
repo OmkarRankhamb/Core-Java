@@ -4,7 +4,9 @@ package Basic;
 public class Third {
 
 	public static void main(String[] args){
-		
+		/*
+		 * Even Print -> 1->40
+		 */
 		Thread t = new Thread(()->{
 			for(int i=1; i<=40; i++) {
 				try {
@@ -18,6 +20,9 @@ public class Third {
 				
 			}
 		});
+		/*
+		 * Odd print 1->50
+		 */
 		
 		Thread t1 = new Thread(()->{
 			for(int i=1; i<=50; i++) {

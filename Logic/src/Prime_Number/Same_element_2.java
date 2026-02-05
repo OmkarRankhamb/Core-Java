@@ -5,21 +5,23 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+
 public class Same_element_2 {
 
 	public static void main(String[] args) {
 		/*
-		 * one list same Element print
+		 *  same Element print
 		 */
 
 		List<Integer> list4 = List.of(12, 34, 56, 78, 12, 34);
 
-		Integer sum = list4.stream()
+	//	Integer sum =
+				list4.stream()
 				// .peek(System.out::println)
-				.filter(i -> Collections.frequency(list4, i) == 1).peek(System.out::println)
+				.filter(i -> Collections.frequency(list4, i) == 1).peek(System.out::println).forEach(System.out::println);
 				// .toList();
-				.reduce(0, (i, j) -> i + j);
-		System.out.println(sum);
+				//.reduce(0, (i, j) -> i + j);
+	//	System.out.println(sum);
 
 		
 		/*

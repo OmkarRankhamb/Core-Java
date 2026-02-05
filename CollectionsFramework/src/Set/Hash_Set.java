@@ -18,12 +18,12 @@ public class Hash_Set {
         
         
         System.out.println(set);
-        System.out.println(set.remove(12));
-        System.out.println(set.size());
-        set.size();
-        System.out.println(set.contains(34));
-        System.out.println(set.equals(set));
-        System.out.println(set);
+//        System.out.println(set.remove(12));
+//        System.out.println(set.size());
+//        set.size();
+//        System.out.println(set.contains(34));
+//        System.out.println(set.equals(set));
+//        System.out.println(set);
 	}
 
 }

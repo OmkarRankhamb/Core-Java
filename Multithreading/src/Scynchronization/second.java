@@ -4,6 +4,7 @@ public class second {
 
 	public static void main(String[] args) throws InterruptedException {
 		print pri = new print();
+		print pre = new print();
 		
 		first f1 = new first(pri);
 		secondd f2 = new secondd(pri);
@@ -12,6 +13,7 @@ public class second {
 		f2.start();
 		Thread.sleep(2500);
 		System.out.println(pri.getcoun());
+		System.out.println(pre.getcoun());
 		
 		
 	}
@@ -21,14 +23,15 @@ public class second {
 class print{
 	int count =0;
 	
-	public void increase() {
-		count++;
+	public synchronized void increase() {
+		
+		this.count++;
 	}
 	
-//	public void Decrease() {
-//		count--;
-//	}
-//	
+	public void Decrease() {
+		count--;
+	}
+	
 	public int getcoun() {
 		return this.count;
 	}
@@ -43,7 +46,7 @@ class first extends Thread{
 	
 	
 	public void run () {
-		for(int i=0; i<10000; i++) {
+		for(int i=0; i<15000; i++) {
 			pre.increase();
 		}
 	}
@@ -57,7 +60,7 @@ class secondd extends Thread{
 	
 	public void run() {
 		for (int i=0; i<10000; i++) {
-			pre.increase();
+			pre.Decrease();
 		}
 	}
 }

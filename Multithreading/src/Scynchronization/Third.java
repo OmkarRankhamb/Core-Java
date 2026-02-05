@@ -2,33 +2,40 @@ package Scynchronization;
 
 public class Third {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main1(String[] args) throws InterruptedException {
 
 		multi mu = new multi();
+		multi m1 = new multi();
 		
 		pahila p1 = new pahila(mu);
-		Dusra d1 = new Dusra(mu);
+		Dusra p2 = new Dusra(mu);
 		
+
 		p1.start();
-		d1.start();
+		//p1.join();
+		p2.start();
 		Thread.sleep(2500);
 		
-		System.out.println(mu.getcount());
+		System.out.println(m1.getcount());
+		//System.out.println(mu.getcount());
 	}
 
 }
 
-class multi {
-	int count = 0;
+class multi { 
+	int count =0;
 
-	public void incrase() {
-		count++;
+	public synchronized void incrase() {
+		//synchronized(this) {
+		this.count++;
 	}
-	public void Decreas() {
+//	}
+	public  void Decrese() {
 		count--;
 	}
 
 	public int getcount() {
+		
 		return this.count;
 	}
 }
@@ -42,8 +49,9 @@ class pahila extends Thread {
 	}
 
 	public void run() {
-		for (int i = 0; i < 10000; i++) {
+		for (int i = 0; i < 15000; i++) {
                mu.incrase();
+              // System.out.println(i);
 		}
 
 	}
@@ -56,16 +64,19 @@ class Dusra extends Thread{
 	}
 	public void run() {
 		for(int i=0; i<10000; i++) {
-			mu.Decreas();
+			mu.Decrese();
+			
 		}
 	}
+
+
+
+
+	
+
+
+
 }
-
-
-
-
-
-
 
 
 

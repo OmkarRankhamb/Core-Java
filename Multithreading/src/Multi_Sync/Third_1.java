@@ -33,7 +33,7 @@ class Sour{
 			Thread.sleep(2500);
 			//wait();
 		}
-		System.out.println("Adding number::");
+		System.out.println("Add number::");
 
 		list.add(num);
 		//notify();
@@ -58,7 +58,7 @@ class Produ extends Thread{
 	
 
 	public void run() {
-	//	while(true) {
+		while(true) {
 			try {
 			sor.Increament();
 			System.out.println("Increment::");
@@ -68,20 +68,20 @@ class Produ extends Thread{
 		
 	}
 		}
-	//}
+	}
 	
 class Consu extends Thread{
 	Sour sor;
 	
 	public void run () {
-		//while (true) {
+		while (true) {
 			try {
 			Thread.sleep(10000 );
 			sor.Decrement();
 			System.out.println("decrement:::");
 			}catch(Exception ex) {
 		
-		//	}
+			}
 	}
 	}
 }

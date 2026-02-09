@@ -2,7 +2,7 @@ package Volatile_sync;
 
 public class First {
 
-	 static boolean flag = true;
+	volatile static boolean flag = true;
 	public static void main(String[] args) throws InterruptedException {
 		
 		Thread t1 = new Thread(()->{

@@ -28,9 +28,9 @@ class Sour{
 	int num=0;
 	
 	public synchronized void Increament() throws InterruptedException {
-		Thread.sleep(1000);
+	//	Thread.sleep(1000);
 		if(list.size()==10) {
-			Thread.sleep(2500);
+		//	Thread.sleep(2500);
 			//wait();
 		}
 		System.out.println("Add number::");
@@ -42,7 +42,7 @@ class Sour{
 	}
 	public synchronized void Decrement() throws InterruptedException {
 		if(list.size()==0) {
-			Thread.sleep(1000);
+			//Thread.sleep(1000);
 			wait();
 			System.out.println("nothin to removed::");
 		}
@@ -76,7 +76,7 @@ class Consu extends Thread{
 	public void run () {
 		while (true) {
 			try {
-			Thread.sleep(10000 );
+			//Thread.sleep(10000 );
 			sor.Decrement();
 			System.out.println("decrement:::");
 			}catch(Exception ex) {

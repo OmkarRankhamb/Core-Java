@@ -35,7 +35,9 @@ public class First {
 		ex.execute(r2);
 		ex.execute(r3);
 		ex.execute(r4);
-		ex.close();
+		
+		
+		ex.close(); // => AutoCloseble
 		}
 		catch(Exception rx){
 			System.out.println(rx.getMessage());

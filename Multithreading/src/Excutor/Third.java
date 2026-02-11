@@ -45,7 +45,9 @@ public class Third {
 		};
 
 		try (ExecutorService tr = Executors.newFixedThreadPool(4);) {
-
+              
+		
+			
 			tr.execute(r1);
 			tr.execute(r2);
 			tr.execute(r3);

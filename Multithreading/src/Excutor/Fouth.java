@@ -18,6 +18,7 @@ public class Fouth {
 		{
 		
 		Future<String> f=ex.submit(call);
+		f.cancel(true);
 		/*
 		 * sumbit return value
 		 * sumbit return type store in Future

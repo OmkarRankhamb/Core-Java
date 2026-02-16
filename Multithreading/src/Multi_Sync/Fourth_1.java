@@ -10,12 +10,15 @@ public class Fourth_1 {
      
     Fir fir = new Fir();
     Sir sir = new Sir();
+    Sir sirr = new Sir();
     
     fir.re = p;
     sir.re =p;
+    sirr.re=p;
     
     fir.start();
     sir.start();
+    sirr.start();
      
  
      
@@ -68,7 +71,7 @@ class Sir extends Thread{
 	public void run() {
 		while(true) {
 		try {
-			Thread.sleep(4000);
+			//Thread.sleep(4000);
 			re.Decre();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
@@ -77,9 +80,23 @@ class Sir extends Thread{
 	}
 }
 }
+class Sirr extends Thread{
+	Print re;
+	
+	public void run() {
+		while(true) {
+		try {
+			//Thread.sleep(4000);
+			re.Decre();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 
-
+	}
+}
 
 
 

@@ -6,16 +6,16 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-public class Colle_1 {
+public class Callable_2 {
 
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
-		Callable<String> c1 = (()->{return new String("abcd");});
+		Callable c2 =(()->{return new String("om");});
 		
-	try(	ExecutorService ex =Executors.newSingleThreadExecutor();){
+		try(ExecutorService tc = 	Executors.newFixedThreadPool(2);){
 		
-		Future<?>f1 =  ex.submit(c1);
-		
-		System.out.println(f1.get());
+		Future<?> f= tc.submit(c2);
+		System.out.println(f.get());
+
 	}
 	}
 

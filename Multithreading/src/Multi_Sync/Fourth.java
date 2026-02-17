@@ -81,16 +81,16 @@ class Second extends Thread{
 		while(true) {
 			try {
 				//Thread.sleep(10000);
-		//	} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-			//	e.printStackTrace();
-			//}
+			} catch (Exception e) {
+				
+			e.printStackTrace();
+			}
 		try {
 			bas.Decrement();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-	//	}
-	//}
-	//}
-//}
+		}
+	}
+	}
+}

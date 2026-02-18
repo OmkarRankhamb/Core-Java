@@ -3,7 +3,9 @@ package Deep_Copy;
 public class Refrace_1 {
 
 	public static void main(String[] args) {
-
+/*
+ * Refrence copy              
+ */
 		Demo d = new Demo();
 		d.id = 23;
 		d.name = "abc";

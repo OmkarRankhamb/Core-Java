@@ -12,6 +12,8 @@ public class First {
 		
 		System.out.println(t.i);
 		System.out.println(t2.i);
+		System.out.println(t.equals(t2));
+		System.out.println(t==t2);
 
 	}
 

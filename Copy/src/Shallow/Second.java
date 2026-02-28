@@ -17,9 +17,9 @@ public class Second {
 		Demoo d =(Demoo)demo.clone();
 		
 		d.name="Eco";
-		d.athur=au;
+	//	d.athur=au;
 		System.out.println("id::"+demo.id+" "+"name::"+demo.name+" athur_name::"+demo.athur.athur_name);
-		System.out.println("id::"+d.id+" "+"name::"+d.name+"athur_name::"+d.athur.athur_name);
+		System.out.println("id::"+d.id+" "+" name::"+d.name+" athur_name::"+d.athur.athur_name);
 			
 	}
 

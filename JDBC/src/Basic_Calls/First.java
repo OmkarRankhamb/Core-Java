@@ -10,10 +10,10 @@ public class First {
 		
 	
      
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/", 
-    "root", 
-    "1234"
-);
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/",  "root", "1234");
+			    
+			
+   
 		System.out.println("connection established");
 		con.close();
 	}

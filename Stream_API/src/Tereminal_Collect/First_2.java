@@ -5,14 +5,17 @@ import java.util.List;
 public class First_2 {
 
 	public static void main(String[] args) {
-         
-	String[] str =("acd","dfk","fgf","dddd","axdc","acd");
-		str.stream()
+     
+//	List.of(2).stream().map(i->i*2).forEach(System.out::println);
+	 int sum =2;
 	
-		.map(i->new String(i).chars()
-	//	.map(i->new StringBuffer(i).reverse().toString().toUpperCase())
-		.distinct()
-		.forEach(System.out::println);
+		for(int i=0 ; i<10; i++) {
+			
+		//	sum = i*2;
+			
+			System.out.println(sum*i);
+		}
+	}
+	
 	}
 
-}

@@ -3,8 +3,23 @@ package Prime_Number;
 public class uniq_element {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		 String sc = "aacbbdgejrioo";
+		 StringBuffer str = new StringBuffer(sc);
+		// int i;
+		 int j;
+		 for(int i =0; i<str.length();i++) {
+			 for(j=i+1; j<str.length();j++) {
+				 
+				 if(str.charAt(i)==str.charAt(j)){
+					 str.deleteCharAt(j);
+					 str.deleteCharAt(i);
+					 
+				 }
+				 
+			 }
+		 }
+		 System.out.println(str);
+	}
 	}
 
-}
+
